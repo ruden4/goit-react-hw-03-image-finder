@@ -44,11 +44,11 @@ export class App extends Component {
           total: data.totalHits,
         }));
 
-        {!data.totalHits && toast.info(`Sorry, no results...`, {
+        !data.totalHits && toast.info(`Sorry, no results...`, {
           autoClose: 3000,
           hideProgressBar: true,
           theme: 'colored',
-        })};
+        });
 
       } catch (error) {
         console.log(error)
