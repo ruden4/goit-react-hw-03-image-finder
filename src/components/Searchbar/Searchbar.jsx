@@ -22,7 +22,7 @@ export class Searchbar extends Component {
             }
         e.preventDefault();
         const { value } = this.state;
-        const {onSubmit, reset} = this.props;
+        const {onSubmit} = this.props;
         onSubmit(value.trim().toLowerCase()); 
         this.setState({ value:'' });
       };
