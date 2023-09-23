@@ -7,7 +7,7 @@ import { Button } from "./Button/Button";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import { getRequestData } from "./API/API";
+import { getRequestData } from "../API/API";
 
 export class App extends Component {
   state = {
