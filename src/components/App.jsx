@@ -66,7 +66,7 @@ render() {
     <Searchbar onSubmit={currentRequest}/>
     {isLoading && <Loader/>}
     <ImageGallery data={imagesList}/>
-    {total > 12 && page < Math.ceil(total / 12 ) && <Button loadMore={this.handleMoreBtn}/>}
+    {page < Math.ceil(total / 12 ) && <Button loadMore={this.handleMoreBtn}/>}
     <ToastContainer
       position="top-right"
       autoClose={5000}
